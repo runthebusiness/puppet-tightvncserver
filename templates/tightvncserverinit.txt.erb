@@ -1,0 +1,20 @@
+#!/bin/sh
+# /etc/init.d/tightvncserver
+# http://www.penguintutor.com/linux/tightvnc
+#Set the VNCUSER variable to the name of the user to start tightvncserver
+VNCUSER='<%= @username %>'
+case "$1" in
+  start)
+    su $VNCUSER -c '/usr/bin/tightvncserver'
+    echo "Starting TightVNC server for $VNCUSER "
+    ;;
+  stop)
+    pkill Xtightvnc
+    echo "Tightvncserver stopped"
+    ;;
+  *)
+    echo "Usage: /etc/init.d/tightvncserver {start|stop}"
+    exit 1
+    ;;
+esac
+exit 0
