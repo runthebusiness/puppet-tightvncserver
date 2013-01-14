@@ -1,0 +1,24 @@
+{
+  "description": "tightvncserver\n\nThis class installs and configures tightvnc server. \n\nIt will install the package and configure it to launch when the machine boots and allows it to be run as a service\n\nWe made this module to compliment runthebusiness-guacamole.\n\nExamples:\n\n\ttightvncserver{\"installtightvnc\":\n\t}\n\n\nThis module has been tested in debian squeeze. The init.pp and params.pp files have place-holders for the functionality to include other flavors. If you would like to contribute the code to enable these other flavors please let us know.\n\nAuthors\n-------\nWill Ferrer, Ethan Brooks\n\nLicensees\n-------\n2012 developed under license for Switchsoft LLC http://www.switchsoft.com a \"Direct response telephony company\" as part of it's \"VOIP Call distribution, ROI analysis platform, call recording, and IVR for inbound and outbound sales\" and Run the Business Systems LLC a \"Technology development investment group\" as part of it's \"PHP, Javascript rapid application development framework and MySQL analysis tools\"\n\nLicense\n-------\nLicensed under the terms of the Open Source LGPL 3.0 license.  \n\n\nContact\n-------\nwill.ferrer@runthebusiness.net\n\nSupport\n-------\n\nPlease send tickets and issues to our contact email address or at: https://github.com/runthebusiness/puppet-tightvncserver/issues\n\nProject Url\n-------\nhttps://github.com/runthebusiness/puppet-tightvncserver\n",
+  "summary": "This class installs and configures tightvncserver",
+  "source": "UNKNOWN",
+  "dependencies": [
+
+  ],
+  "checksums": {
+    "templates/tightvncserverinit.txt.erb": "97987ecdf0e6dd6ad8874e57b0a04180",
+    "manifests/params.pp": "e3cf4da5ee3e6229423a6b9da17f2954",
+    "README": "68f1ceac25174727e68275daa73f1b5d",
+    "tests/init.pp": "8161854bff2d6fc91b596efa4dbe8c04",
+    "Modulefile": "612142d115578200f372e28139594398",
+    "manifests/init.pp": "9707f75ec195553c2216e27b7f4ffec6"
+  },
+  "types": [
+
+  ],
+  "license": "Apache License, Version 2.0",
+  "author": "runthebusiness",
+  "name": "runthebusiness-tightvncserver",
+  "project_page": "https://github.com/runthebusiness/puppet-tightvncserver",
+  "version": "1.0.1"
+}
